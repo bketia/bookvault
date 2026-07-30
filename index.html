@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png">
+</head>
+
+<body>
+
+    <header>
+        <h1> Book Vault</h1>
+        <p>Find books by title, author or topic.</p>
+    </header>
+
+    <section class="controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for books..."
+        >
+
+        <select id="categorySelect">
+            <option value="">All Categories</option>
+            <option value="business">Business</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="technology">Technology</option>
+            <option value="fiction">Fiction</option>
+        </select>
+
+        <select id="sortSelect">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+        </select>
+
+        <button id="searchBtn">
+            Search
+        </button>
+
+    </section>
+
+    <p id="bookCount"></p>
+    <section id="results">
+
+    </section>
+
+ <script src="script.js"></script>
+   <footer>
+       <p>Book Finder | Powered by the Open Library API</p>
+   </footer>
+</body>
+</html>

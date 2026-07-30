@@ -1,0 +1,214 @@
+/* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+    padding: 30px;
+    min-height:100vh;
+
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Search Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input,
+select,
+button {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Search Box */
+input {
+    width: 320px;
+}
+
+/* Search Button */
+button {
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Button */
+button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Click Effect */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Input Hover */
+input:hover,
+select:hover {
+    border-color: #3498db;
+}
+
+/* Input Focus */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52,152,219,0.3);
+}
+
+/* Results Grid */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+/* Book Card */
+.book-card{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:10px;
+    transition:0.3s;
+}
+
+/* Card Hover Effect */
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+/* Book Image */
+.book-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* Image Zoom on Hover */
+.book-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Book Title */
+.book-card h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+/* Author */
+.book-card h4 {
+    color: #777;
+    margin: 10px 0;
+}
+
+/* Description */
+.book-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Preview Link */
+.book-card a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Link Hover */
+.book-card a:hover {
+    background: #219150;
+    transform: scale(1.05);
+}
+
+/* Loader Styling */
+.loader{
+
+    margin:40px auto;
+    width:60px;
+    height:60px;
+    border:8px solid #ddd;
+    border-top:8px solid #3498db;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+#bookCount{
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:20px;
+    color:#2c3e50;
+}
+
+button{
+    height:64px;
+}
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    padding:20px;
+    color:#777;
+}
