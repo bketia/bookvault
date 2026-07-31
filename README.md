@@ -60,6 +60,9 @@ http://44.204.229.53
 
 Traffic is distributed through LB01 (Load Balancer).
 
+Youtube link: https://m.youtube.com/watch?v=DaPmY6dQg68&pp=4gcQEg5zbmFwY2hhdF9zdG9yeYoIAkAB&ra=m
+
+
 ---
 
 ## Challenges
