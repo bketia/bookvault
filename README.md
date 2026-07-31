@@ -55,6 +55,8 @@ The application was deployed on:
 
 - Web01
 - Web02
+Website link:
+http://44.204.229.53 
 
 Traffic is distributed through LB01 (Load Balancer).
 
